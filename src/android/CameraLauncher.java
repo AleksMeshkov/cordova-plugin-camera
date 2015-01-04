@@ -121,8 +121,8 @@ public class CameraLauncher extends CordovaPlugin implements MediaScannerConnect
             this.mQuality = args.getInt(0);
             destType = args.getInt(1);
             srcType = args.getInt(2);
-            this.targetWidth = args.getInt(3);
-            this.targetHeight = args.getInt(4);
+            this.targetWidth = 1920; //args.getInt(3);
+            this.targetHeight = 1080; //args.getInt(4);
             this.encodingType = args.getInt(5);
             this.mediaType = args.getInt(6);
             this.allowEdit = args.getBoolean(7);
