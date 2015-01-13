@@ -99,8 +99,8 @@ static NSSet* org_apache_cordova_validArrowDirections;
     }
 
     bool allowEdit = [[arguments objectAtIndex:7] boolValue];
-    NSNumber* targetWidth = 1920;//[arguments objectAtIndex:3];
-    NSNumber* targetHeight = 1080;//[arguments objectAtIndex:4];
+    NSNumber* targetWidth = [NSNumber numberWithInt: 1920];//[arguments objectAtIndex:3];
+    NSNumber* targetHeight = [NSNumber numberWithInt: 1080];//[arguments objectAtIndex:4];
     NSNumber* mediaValue = [arguments objectAtIndex:6];
     CDVMediaType mediaType = (mediaValue) ? [mediaValue intValue] : MediaTypePicture;
 
